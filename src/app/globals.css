@@ -2,26 +2,47 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.Adven {
+  color: rgba(245, 245, 245, 0);
+  font-family: Inter;
+
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 9.979px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #0d60fe;
+}
+.Adven1 {
+  color: rgba(245, 245, 245, 0);
+  font-family: Inter;
+
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 9.979px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #0d60fe;
+}
+.Review {
+  font-size: 1.5rem;
+  /* This is the default size for all screen sizes. */
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@media (min-width: 576px) {
+  .Review {
+    font-size: 1.8rem;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@media (min-width: 768px) {
+  .Review {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .Review {
+    font-size: 2.4rem;
+  }
 }
