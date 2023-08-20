@@ -9,13 +9,13 @@ const Middle = () => {
         <div className="left  flex-col space-y-4">
           <div className=" container mx-auto justify-center items-center   ">
             {" "}
-            <div className="md:font-extrabold text-5xl font-bold md:text-6xl">Explore</div>
-            <div className="md:font-extrabold text-5xl font-bold md:text-6xl">The World</div>
-            <div className="md:font-extrabold text-5xl font-bold md:text-6xl text-[#0D60FE]">
+            <div className=" text-5xl font-extrabold md:text-[70px]">Explore</div>
+            <div className=" text-5xl font-extrabold md:text-[70px]">The World</div>
+            <div className=" text-5xl font-extrabold  md:text-[70px] text-[#0D60FE]">
               Tridventure
             </div>
           </div>
-          <div className="left-1 md:w-1/2 text-[14px]">
+          <div className="left-1 w-[60vw] text-[14px] md:text-3xl ">
             I can help Generate ‘Lorem ipsum’ to fill your text layers with
             dummy text. Select all the text layers you want to generate ‘Lorem
             ipsum’ for then click ‘ Generate’ it will generate for each layer
@@ -23,9 +23,17 @@ const Middle = () => {
           </div>
           
         </div>
-        <div className="Right container">
+        {/* <div className="Right container">
           <img src="/dd.png" alt="" srcset="" />
-        </div>
+        </div> */}
+<div className="Right container">
+  <img 
+    src="/dd.png" 
+    alt="" 
+    srcset="" 
+    className="h-40vh w-30vw sm:h-50vh sm:w-40vw md:h-60vh md:w-50vw lg:h-70vh lg:w-60vw xl:h-80vh xl:w-70vw"
+  />
+</div>
 
         </div>
     

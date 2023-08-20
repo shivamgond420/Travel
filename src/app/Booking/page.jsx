@@ -1,12 +1,11 @@
 import React from "react";
-
+import Link from "next/link";
 const Booking = () => {
   return (
     <div className="md:mt-[343px]  px-3  pt-3">
       <div
         className="Main md:bg-[#F3F7FF] px-12 pb-[-34px] h-[60vh]  pt-16"
         style={{
-      
           borderTopLeftRadius: 195,
           borderBottomLeftRadius: 195,
         }}
@@ -22,10 +21,9 @@ const Booking = () => {
               </div>
             </div>
             <div className="flex items-center space-x-2  justify-center underline">
-              <div className="font-bold  text-[#002D83] text-center items-center flex  underline">
-                {" "}
+            <Link href="/SpecialDeals" className="underline">
                 Book Now
-              </div>
+              </Link>
               <svg
                 className=""
                 xmlns="http://www.w3.org/2000/svg"
@@ -49,7 +47,9 @@ const Booking = () => {
               </div>
             </div>
             <div className=" font-bold  text-[#002D83] flex items-center justify-center space-x-2">
-              <div className="underline">Book Now</div>
+              <Link href="/SpecialDeals" className="underline">
+                Book Now
+              </Link>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"
@@ -74,20 +74,18 @@ const Booking = () => {
               made easy for you
             </div>
             <div className="text-center">
-              I can help Generate ‘Lorem ipsum’ to fill your text layers 
-              Select all the text layers you want to generate ‘Lorem ipsum 
-              then click ‘I can help Generate ‘Lorem ipsum’ to fill your text
-              layers with. Select all the text layers you want to generate
-              ‘Lorem ipsum ’ for then click ‘
+              I can help Generate ‘Lorem ipsum’ to fill your text layers Select
+              all the text layers you want to generate ‘Lorem ipsum then click
+              ‘I can help Generate ‘Lorem ipsum’ to fill your text layers with.
+              Select all the text layers you want to generate ‘Lorem ipsum ’ for
+              then click ‘
             </div>
           </div>
         </div>
         <div className="flex   md:mb-12   md:mt-[-134px] justify-end">
-        <div className="Adven1 text-[200px]">Trip</div>
+          <div className="Adven1 text-[200px]">Trip</div>
         </div>
-        
       </div>
-      
     </div>
   );
 };

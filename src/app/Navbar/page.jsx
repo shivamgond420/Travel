@@ -1,20 +1,19 @@
-
-
-'use client'
-import React, { useState } from 'react'
-import { Transition } from '@headlessui/react'
+"use client";
+import React, { useState } from "react";
+import { Transition } from "@headlessui/react";
+import Link from "next/link";
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <nav className="bg-white shadow container  mx-auto">
       <div className="max-w-7xl mx-auto px-2 sm:px-6 z-0 lg:px-8">
         <div className="flex justify-between h-16">
-          <div className="flex-shrink-0 flex items-center">
+          <Link href="/" className="flex-shrink-0 flex items-center">
             <div className="text-2xl font-bold text-blue-500">Trip</div>
             <div className="text-2xl font-bold text-blue-500">venture</div>
-          </div>
+          </Link>
           <div className="-mr-2 flex items-center sm:hidden">
             <button
               type="button"
@@ -60,10 +59,19 @@ const Navbar = () => {
             </button>
           </div>
           <div className="hidden sm:flex sm:items-center sm:ml-6">
-            <div className="text-blue-500 hover:text-blue-700 px-3 py-2 rounded-md text-sm font-medium">Discovery</div>
-            <div className="text-blue-500 hover:text-blue-700 px-3 py-2 rounded-md text-sm font-medium">Community</div>
-            <div className="text-blue-500 hover:text-blue-700 px-3 py-2 rounded-md text-sm font-medium">Special Deals</div>
-            <div className="text-blue-500 hover:text-blue-700 px-3 py-2 rounded-md text-sm font-medium">About Us</div>
+            {" "}
+            <div className="text-blue-500 hover:text-blue-700 px-3 py-2 rounded-md text-sm font-medium">
+              <Link href="/Discovery">Discovery</Link>
+            </div>{" "}
+            <div className="text-blue-500 hover:text-blue-700 px-3 py-2 rounded-md text-sm font-medium">
+              <Link href="/Community"> Community</Link>
+            </div>{" "}
+            <div className="text-blue-500 hover:text-blue-700 px-3 py-2 rounded-md text-sm font-medium">
+              <Link href="/SpecialDeals"> Special Deals</Link>
+            </div>{" "}
+            <div className="text-blue-500 hover:text-blue-700 px-3 py-2 rounded-md text-sm font-medium">
+              <Link href="/About"> About Us</Link>
+            </div>
           </div>
         </div>
       </div>
@@ -78,15 +86,24 @@ const Navbar = () => {
       >
         <div className="sm:hidden" id="mobile-menu">
           <div className="px-2 pt-2 pb-3 space-y-1">
-            <div className="text-blue-500 hover:text-blue-700 block px-3 py-2 rounded-md text-base font-medium">Discovery</div>
-            <div className="text-blue-500 hover:text-blue-700 block px-3 py-2 rounded-md text-base font-medium">Community</div>
-            <div className="text-blue-500 hover:text-blue-700 block px-3 py-2 rounded-md text-base font-medium">Special Deals</div>
-            <div className="text-blue-500 hover:text-blue-700 block px-3 py-2 rounded-md text-base font-medium">About Us</div>
+            {" "}
+            <div className="text-blue-500 hover:text-blue-700 block px-3 py-2 rounded-md text-base font-medium">
+              <Link href="/Discovery">Discovery</Link>
+            </div>{" "}
+            <div className="text-blue-500 hover:text-blue-700 block px-3 py-2 rounded-md text-base font-medium">
+              <Link href="/Community"> Community</Link>
+            </div>
+            <div className="text-blue-500 hover:text-blue-700 block px-3 py-2 rounded-md text-base font-medium">
+              <Link href="/SpecialDeals"> Special Deals</Link>
+            </div>
+            <div className="text-blue-500 hover:text-blue-700 block px-3 py-2 rounded-md text-base font-medium">
+              <Link href="/About"> About Us</Link>
+            </div>
           </div>
         </div>
       </Transition>
     </nav>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
